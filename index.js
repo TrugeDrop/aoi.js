@@ -11,12 +11,12 @@ const bot = new aoijs.Bot({
 bot.onMessage();
 
 const loader = new aoijs.LoadCommands(bot);
-loader.load(bot.cmd,"./komutlar/");
+loader.load(bot.cmd,"./commands/");
 
 // Ready Event
 bot.readyCommand({
     channel: "",
-    code: `$log[$userTag[$clientID] hazır!]`
+    code: `$log[$userTag[$clientID] ready!]`
 });
 
 // Commands
@@ -30,6 +30,6 @@ bot.status({
 });
 
 bot.variables({
-    degisken: "degisken",
-    degisken2: "degisken2"
+    variable: "variable",
+    variable2: "variable2"
 })
