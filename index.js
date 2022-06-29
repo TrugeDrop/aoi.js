@@ -7,28 +7,26 @@ const bot = new aoijs.Bot({
     intents: ["GUILDS", "GUILD_MESSAGES"]
 });
 
-//Events
+// Events
 bot.onMessage();
 
 const loader = new aoijs.LoadCommands(bot);
 loader.load(bot.cmd,"./komutlar/");
 
-//Ready Event
+// Ready Event
 bot.readyCommand({
     channel: "",
     code: `$log[$userTag[$clientID] hazır!]`
 });
 
-//Komutları alta yazın.
+// Commands
 
-//Komutları üste yazın.
-
-//Bot Durumu - Çoğalta bilirsiniz
+//Bot Status - You Can Duplicate
 bot.status({
-	text: 'Herkesi', //durum yazısı
-	type: 'WATCHING', //oynuyor kısmı
-	status: 'online', //durum
-	time: 12 //zaman 
+	text: 'Herkesi', // status letter
+	type: 'WATCHING', // playing part
+	status: 'online', // status
+	time: 12 // time
 });
 
 bot.variables({
