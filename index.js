@@ -23,7 +23,7 @@ bot.readyCommand({
 
 //Bot Status - You Can Duplicate
 bot.status({
-	text: 'Herkesi', // status letter
+	text: 'Status', // status letter
 	type: 'WATCHING', // playing part
 	status: 'online', // status
 	time: 12 // time
